@@ -4,7 +4,8 @@
   "description": "Common styles I use across projects regardless of libraries",
   "main": "index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "sassdoc ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/adamdoe/common-css#readme",
   "dependencies": {
-    "doe-css": "^1.0.0"
+    "doe-css": "^1.0.1"
+  },
+  "devDependencies": {
+    "sassdoc": "^2.7.3"
   }
 }
