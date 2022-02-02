@@ -1,0 +1,19 @@
+{
+  "name": "doe-css",
+  "version": "1.0.0",
+  "description": "Common styles I use across projects regardless of libraries",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamdoe/common-css.git"
+  },
+  "author": "Adam Doe <adamnickolasdoe@gmail.com> (https://adamdoe.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamdoe/common-css/issues"
+  },
+  "homepage": "https://github.com/adamdoe/common-css#readme"
+}
