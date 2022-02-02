@@ -1,6 +1,6 @@
 {
   "name": "doe-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common styles I use across projects regardless of libraries",
   "main": "index.scss",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/adamdoe/common-css/issues"
   },
-  "homepage": "https://github.com/adamdoe/common-css#readme"
+  "homepage": "https://github.com/adamdoe/common-css#readme",
+  "dependencies": {
+    "doe-css": "^1.0.0"
+  }
 }

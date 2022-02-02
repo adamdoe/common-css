@@ -1,0 +1,47 @@
+/// MIXINS
+
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+/// Utility for colors
+@each $color-name, $hex in $theme_colors {
+  .color-#{$color-name} {
+    color: $hex;
+  }
+  .bg-#{$color-name} {
+    background-color: $hex;
+  }
+}
+
+/// Link Mixin
+/// @access public
+/// @params {String} $link, $visit, $hover, $active - Link colors
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
