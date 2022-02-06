@@ -14,13 +14,21 @@
     }
 }
 
-/// Utility for colors
-@each $color-name, $hex in $theme_colors {
-  .color-#{$color-name} {
-    color: $hex;
+/// Utility for background colors
+@mixin set-bg-colors($themes) {
+  @each $color-name, $hex in $theme_colors {
+    .bg--#{$color-name} {
+      background-color: $hex;
+    }
   }
-  .bg-#{$color-name} {
-    background-color: $hex;
+}
+
+/// Utility for colors
+@mixin set-bg-colors($themes) {
+  @each $color-name, $hex in $theme_colors {
+    .color--#{$color-name} {
+      color: $hex;
+    }
   }
 }
 
@@ -40,4 +48,20 @@
       color: $active;
     }
   }
+}
+
+/// Input Placeholder
+/// @example
+///    input,  
+///    textarea {  
+///        @include input-placeholder {
+///            color: $grey;
+///        }
+///    }
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
 }

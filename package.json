@@ -1,6 +1,6 @@
 {
   "name": "doe-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common styles I use across projects regardless of libraries",
   "main": "index.scss",
   "scripts": {
